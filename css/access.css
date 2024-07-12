@@ -1,14 +1,21 @@
 .access {
   background-color: #069fdc;
-  padding-bottom: 300px;
+  padding: 50px 0 300px;
 }
 
 .access__title {
   position: relative;
   color: #fff;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .access__title {
+    margin-bottom: 50px;
+    font-size: 26px;
+  }
 }
 
 .access__title::before {
@@ -16,7 +23,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -10px;
+  bottom: -8px;
   width: 50px;
   height: 2px;
   background-color: #fff;
@@ -43,8 +50,21 @@
   padding: 0 16px;
 }
 
+@media screen and (max-width: 768px) {
+  .access__content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
 .access__left {
   width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .access__left {
+    width: 100%;
+  }
 }
 
 .access__left iframe {
@@ -54,6 +74,15 @@
   border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .access__left iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+  }
+}
+
 .access__right {
   width: 40%;
   display: flex;
@@ -61,8 +90,21 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .access__right {
+    width: 100%;
+  }
+}
+
 .access__text {
   color: #fff;
   font-size: 14px;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .access__text {
+    letter-spacing: 0.5px;
+    line-height: 16px;
+  }
 }

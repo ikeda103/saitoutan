@@ -2,7 +2,13 @@
   position: relative;
   max-width: 1200px;
   padding: 0 16px;
-  margin: 100px auto;
+  margin: 200px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .catch-copy {
+    margin: 100px auto;
+  }
 }
 
 .catch-copy__title {
@@ -19,6 +25,14 @@
   letter-spacing: 8px;
 }
 
+@media screen and (max-width: 768px) {
+  .catch-copy__title h2 {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 8px;
+  }
+}
+
 .catch-copy__text {
   margin-top: 40px;
   text-align: center;
@@ -26,12 +40,20 @@
   line-height: 40px;
   font-size: 18px;
 }
-/* 
-画面右に配置し、上下にふわふわ動く */
+
+@media screen and (max-width: 768px) {
+  .catch-copy__text {
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+}
+
 .move-icon-right {
   opacity: 0.4;
   z-index: -1;
-  position: fixed;
+  position: absolute;
   right: 180px;
   top: calc(50% - 50px);
   transform: translateY(-50%);
@@ -47,7 +69,7 @@
 .move-icon-left {
   opacity: 0.4;
   z-index: -1;
-  position: fixed;
+  position: absolute;
   left: 130px;
   top: calc(50% + 100px);
   transform: translateY(-50%);

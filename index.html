@@ -57,9 +57,31 @@
             <span class="line">ここにあり</span>
           </h2>
         </div>
-        <div class="wave">
-          <canvas id="waveCanvas" width="1012" height="333"></canvas>
+        <!--Waves Container-->
+        <div class="waves-container">
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
         </div>
+        <!--Waves end-->
       </section>
       <!-- キービジュアル -->
 
@@ -95,9 +117,31 @@
 
       <!-- アクセス -->
       <section>
-        <div class="wave__blue">
-          <canvas id="waveCanvasBlue" width="1012" height="333"></canvas>
+        <!--Waves Container-->
+        <div class="waves-container__static">
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(6,159,220,0.7)" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(6,159,220,0.5)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(6,159,220,0.3)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#069FDC" />
+            </g>
+          </svg>
         </div>
+        <!--Waves end-->
         <div class="access">
           <h2 class="access__title">Access</h2>
           <div class="access__content">
@@ -136,9 +180,7 @@
 
     <!-- フッター -->
     <footer>
-      <div class="container">
-        <p>&copy; 2024 株式会社サンプル. All rights reserved.</p>
-      </div>
+      <small>&copy; 2024 板垣商店 All rights reserved.</small>
     </footer>
     <!-- フッター -->
 
