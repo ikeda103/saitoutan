@@ -1,0 +1,73 @@
+.catch-copy {
+  position: relative;
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 100px auto;
+}
+
+.catch-copy__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.catch-copy__title h2 {
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 8px;
+}
+
+.catch-copy__text {
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 40px;
+  font-size: 18px;
+}
+/* 
+画面右に配置し、上下にふわふわ動く */
+.move-icon-right {
+  opacity: 0.4;
+  z-index: -1;
+  position: fixed;
+  right: 180px;
+  top: calc(50% - 50px);
+  transform: translateY(-50%);
+  animation: moveIcon 5s infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .move-icon-right {
+    right: 20px;
+  }
+}
+
+.move-icon-left {
+  opacity: 0.4;
+  z-index: -1;
+  position: fixed;
+  left: 130px;
+  top: calc(50% + 100px);
+  transform: translateY(-50%);
+  animation: moveIcon 7s infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .move-icon-left {
+    left: 20px;
+  }
+}
+
+@keyframes moveIcon {
+  0% {
+    transform: translateY(-60%);
+  }
+  50% {
+    transform: translateY(-45%);
+  }
+  100% {
+    transform: translateY(-60%);
+  }
+}

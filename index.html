@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="ja" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>板垣商店｜根室のおみせやさん｜納沙布岬</title>
+    <meta
+      name="description"
+      content="根室の板垣商店では、納沙布岬の特産品やお土産を提供しています。本土最東端ガラナや北の勝など、ここでしか手に入らない特別な品々をお楽しみください。"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/key-visual.css" />
+    <link rel="stylesheet" href="css/catch-copy.css" />
+    <link rel="stylesheet" href="css/access.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header class="header visible">
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="/products">商品紹介</a></li>
+          <li><a href="/shop">店舗紹介</a></li>
+          <li><a href="/contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <h1 class="header__logo">
+        <img src="image/logo.png" alt="いたがき" width="440" height="440" />
+      </h1>
+    </header>
+    <!-- ヘッダー -->
+
+    <!-- メインコンテンツ -->
+    <main>
+      <!-- キービジュアル -->
+      <section class="key-visual">
+        <img
+          src="image/key-visual.webp"
+          alt="納沙布岬"
+          class="key-visual__image"
+          width="1012"
+          height="333"
+        />
+        <div class="key-visual__text">
+          <h2 class="key-visual__title">
+            <span class="line">最東端の地</span>
+            <span class="line">特別な一品</span>
+            <span class="line">ここにあり</span>
+          </h2>
+        </div>
+        <div class="wave">
+          <canvas id="waveCanvas" width="1012" height="333"></canvas>
+        </div>
+      </section>
+      <!-- キービジュアル -->
+
+      <!-- キャッチコピー -->
+      <section class="catch-copy fade-in-section">
+        <div class="catch-copy__title">
+          <h2>最東端の宝探し</h2>
+          <img src="image/wave.svg" alt="波" class="title-wave" width="100" height="100" />
+        </div>
+        <p class="catch-copy__text">
+          納沙布岬に近い珸瑤瑁の地にある当店では、<br />
+          当店限定の「本土最東端ガラナ」をはじめ、<br />
+          根室の酒蔵がつくる地酒「北の勝」など、<br />
+          ここでしか手に入らない特別な品々をご提供します。<br />
+          あなたの旅を彩る特別な一品を見つけに来てください。
+        </p>
+        <img
+          src="image/garana_icon.png"
+          alt="ガラナ"
+          class="move-icon-right"
+          width="94.5"
+          height="133"
+        />
+        <img
+          src="image/kitanokatsu_icon.png"
+          alt="北の勝"
+          class="move-icon-left"
+          width="109"
+          height="141.5"
+        />
+      </section>
+      <!-- キャッチコピー -->
+
+      <!-- アクセス -->
+      <section>
+        <div class="wave__blue">
+          <canvas id="waveCanvasBlue" width="1012" height="333"></canvas>
+        </div>
+        <div class="access">
+          <h2 class="access__title">Access</h2>
+          <div class="access__content">
+            <div class="access__left">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11602.278349442975!2d145.792681!3d43.365113!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f6c292961d3521d%3A0x463dfd7f538f7cc3!2z44GK44G_44Gb44KE44GV44KTIOOBhOOBn-OBjOOBjQ!5e0!3m2!1sja!2sjp!4v1720230257794!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="access__right">
+              <p class="access__text">
+                <strong>住所:</strong>　〒087-0164 北海道根室市珸瑤瑁１丁目５０<br />
+                <br />
+                <strong>TEL:</strong>　0153-28-3045<br />
+                <br />
+                <strong>営業時間:</strong>　8:00〜19:00<br />
+                <br />
+                <strong>定休日:</strong>　不定休<br />
+                <br />
+                <strong>駐車場:</strong>　あり 約6台<br />
+                <br />
+                <strong>クレジットカード:</strong>　利用不可<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- アクセス -->
+    </main>
+    <!-- メインコンテンツ -->
+
+    <!-- フッター -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 株式会社サンプル. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- フッター -->
+
+    <script src="js/script.js" defer></script>
+    <script src="js/animation.js" defer></script>
+    <script src="js/header.js" defer></script>
+  </body>
+</html>

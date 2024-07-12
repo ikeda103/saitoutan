@@ -1,0 +1,97 @@
+/* stylelint-disable declaration-block-no-duplicate-properties */
+
+/* ボックスサイズのルール */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* フォントサイズの膨張を防ぐ */
+html {
+  text-size-adjust: none;
+  text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* CSSでより良い制御を可能にするため、デフォルトのマージンを削除 */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* リストロールを持つul、ol要素のリストスタイルを削除。デフォルトのスタイリングが削除されることを示唆 */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* bodyの基本的なデフォルトを設定 */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* 見出しとインタラクティブ要素に短い行高を設定 */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* 見出しのテキスト折り返しを調整 */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* クラスを持たないa要素はデフォルトのスタイルを取得 */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentcolor;
+}
+
+/* 画像の取り扱いを容易にする */
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* 入力とボタンのフォントを継承 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* rows属性を持たないtextareaは小さすぎないようにする */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* アンカーが設定されているものはスクロールマージンを追加 */
+:target {
+  scroll-margin-block: 5ex;
+}
