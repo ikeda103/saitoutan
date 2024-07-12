@@ -114,3 +114,8 @@
     line-height: 16px;
   }
 }
+
+.access__tel {
+  text-decoration: underline;
+  color: #fff;
+}

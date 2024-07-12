@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/key-visual.css" />
     <link rel="stylesheet" href="css/catch-copy.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/access.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,7 +63,6 @@
           <svg
             class="waves"
             xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28"
             preserveAspectRatio="none"
             shape-rendering="auto"
@@ -74,10 +74,10 @@
               />
             </defs>
             <g class="parallax">
-              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
-              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              <use x="48" y="0" fill="rgba(255,255,255,0.7)" />
+              <use x="48" y="3" fill="rgba(255,255,255,0.5)" />
+              <use x="48" y="5" fill="rgba(255,255,255,0.3)" />
+              <use x="48" y="7" fill="#fff" />
             </g>
           </svg>
         </div>
@@ -102,7 +102,7 @@
           src="image/garana_icon.png"
           alt="ガラナ"
           class="move-icon-right"
-          width="94.5"
+          width="94"
           height="133"
         />
         <img
@@ -110,10 +110,71 @@
           alt="北の勝"
           class="move-icon-left"
           width="109"
-          height="141.5"
+          height="141"
         />
       </section>
       <!-- キャッチコピー -->
+
+      <!-- スライド -->
+      <section class="carousel fade-in-section" aria-label="スライダー">
+        <ul class="carousel__list">
+          <li class="carousel__item">
+            <img
+              src="image/slide1.jpg"
+              alt="店舗"
+              class="carousel__image"
+              width="400"
+              height="200"
+            />
+          </li>
+          <li class="carousel__item">
+            <img
+              src="image/slide2.jpg"
+              alt="店舗内部"
+              class="carousel__image"
+              width="400"
+              height="200"
+            />
+          </li>
+          <li class="carousel__item">
+            <img
+              src="image/slide3.jpg"
+              alt="最東端ガラナ"
+              class="carousel__image"
+              width="400"
+              height="200"
+            />
+          </li>
+          <li class="carousel__item">
+            <img
+              src="image/slide1.jpg"
+              alt="店舗"
+              class="carousel__image"
+              width="400"
+              height="200"
+            />
+          </li>
+          <li class="carousel__item">
+            <img
+              src="image/slide2.jpg"
+              alt="店舗内部"
+              class="carousel__image"
+              width="400"
+              height="200"
+            />
+          </li>
+          <li class="carousel__item">
+            <img
+              src="image/slide3.jpg"
+              alt="最東端ガラナ"
+              class="carousel__image"
+              width="400"
+              height="200"
+            />
+          </li>
+        </ul>
+      </section>
+      <!-- スライド -->
 
       <!-- アクセス -->
       <section>
@@ -122,22 +183,18 @@
           <svg
             class="waves"
             xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28"
             preserveAspectRatio="none"
             shape-rendering="auto"
           >
             <defs>
-              <path
-                id="gentle-wave"
-                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-              />
+              <path d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
             <g class="parallax">
-              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(6,159,220,0.7)" />
-              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(6,159,220,0.5)" />
-              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(6,159,220,0.3)" />
-              <use xlink:href="#gentle-wave" x="48" y="7" fill="#069FDC" />
+              <use x="48" y="0" fill="rgba(6,159,220,0.7)" />
+              <use x="48" y="3" fill="rgba(6,159,220,0.5)" />
+              <use x="48" y="5" fill="rgba(6,159,220,0.3)" />
+              <use x="48" y="7" fill="#069FDC" />
             </g>
           </svg>
         </div>
@@ -155,13 +212,16 @@
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
+                  title="map"
                 ></iframe>
               </div>
               <div class="access__right">
                 <p class="access__text">
                   <strong>住所:</strong>　〒087-0164 北海道根室市珸瑤瑁１丁目５０<br />
                   <br />
-                  <strong>TEL:</strong>　0153-28-3045<br />
+                  <strong>TEL:</strong>　<a class="access__tel" href="tel:0153-28-3045"
+                    >0153-28-3045</a
+                  ><br />
                   <br />
                   <strong>営業時間:</strong>　8:00〜19:00<br />
                   <br />

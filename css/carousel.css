@@ -1,0 +1,71 @@
+.carousel {
+  overflow: hidden;
+  margin: 150px 0 100px;
+}
+
+.carousel__list {
+  display: flex;
+  gap: 30px;
+  width: calc(400px * 6 + 30px * 5); /* 画像の幅 * 画像の数 + 画像間の隙間の数 */
+  height: auto;
+  animation: scroll 25s linear infinite;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel__list {
+    gap: 15px;
+    width: calc(200px * 6 + 15px * 5); /* 画像の幅 * 画像の数 + 画像間の隙間の数 */
+  }
+}
+
+.carousel__item {
+  width: 400px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel__item {
+    width: 200px;
+    height: 100px;
+    flex-shrink: 0;
+  }
+}
+
+.carousel__image {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  aspect-ratio: 4/2;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel__image {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+.carousel__item:nth-child(2n) {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel__item:nth-child(2n) {
+    margin-top: 30px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
