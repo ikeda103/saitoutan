@@ -2,3 +2,56 @@ footer {
   padding: 30px 16px;
   text-align: center;
 }
+
+.footer__link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer__link__item {
+  color: #121212;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1;
+  position: relative;
+}
+
+.footer__link__item::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #121212;
+  transition: width 0.3s, left 0.3s;
+}
+
+.footer__link__item:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.footer__link__item:not(:last-child) {
+  margin-right: 10px;
+  border-right: 1px solid #121212;
+  padding-right: 10px;
+}
+
+.footer__tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-weight: bold;
+  gap: 5px;
+  color: #121212;
+  text-decoration: none;
+}
+
+.footer__tel img {
+  margin-top: 2px;
+}
