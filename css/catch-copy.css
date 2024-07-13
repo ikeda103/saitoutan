@@ -75,6 +75,10 @@
   .move-icon-left {
     opacity: 0.2;
   }
+
+  .move-icon-right {
+    right: 20px;
+  }
 }
 
 @keyframes moveIcon {
