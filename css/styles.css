@@ -10,15 +10,22 @@ main {
   margin-top: 48px;
 }
 
-@media screen and (max-width: 768px) {
-  main {
-    margin-top: 38px;
-  }
-}
-
 h2 {
   margin: 0;
   letter-spacing: 4px;
+}
+
+.pc-hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp-hidden {
+    display: none;
+  }
+  .pc-hidden {
+    display: block;
+  }
 }
 
 .fade-in-section {

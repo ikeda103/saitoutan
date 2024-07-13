@@ -15,9 +15,10 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    height: 38px;
-    top: -38px;
-    grid-template-columns: auto;
+    gap: 20px;
+    padding: 5px 20px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
   }
 }
 
@@ -27,12 +28,6 @@
 
 .header.hidden {
   top: -58px;
-}
-
-@media screen and (max-width: 768px) {
-  .header.hidden {
-    top: -38px;
-  }
 }
 
 .header__logo {
@@ -47,9 +42,11 @@
 
 @media screen and (max-width: 768px) {
   .header__logo {
+    padding: 0;
+    border-radius: 0;
     margin: 0 auto;
-    width: 90px;
-    height: 81px;
+    width: auto;
+    height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,8 +60,8 @@
 
 @media screen and (max-width: 768px) {
   .header__logo img {
-    width: 80px;
-    height: 80px;
+    width: auto;
+    height: 30px;
   }
 }
 
@@ -76,7 +73,8 @@
 
 @media screen and (max-width: 768px) {
   .header__nav {
-    display: none;
+    max-width: 250px;
+    order: 1;
   }
 }
 
@@ -92,6 +90,12 @@
   letter-spacing: 1.2px;
   font-weight: bold;
   transition: color 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu a {
+    font-size: 12px;
+  }
 }
 
 .header__menu a::before {
