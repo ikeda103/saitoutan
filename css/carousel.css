@@ -12,7 +12,7 @@
 .carousel__list {
   display: flex;
   gap: 30px;
-  width: calc(400px * 6 + 30px * 5); /* 画像の幅 * 画像の数 + 画像間の隙間の数 */
+  width: calc(400px * 6 + 30px * 6); /* 画像の幅 * 画像の数 + 画像間の隙間の数 */
   height: auto;
   animation: scroll 25s linear infinite;
   list-style: none;
@@ -23,7 +23,7 @@
 @media screen and (max-width: 768px) {
   .carousel__list {
     gap: 15px;
-    width: calc(200px * 6 + 15px * 5); /* 画像の幅 * 画像の数 + 画像間の隙間の数 */
+    width: calc(200px * 6 + 15px * 6); /* 画像の幅 * 画像の数 + 画像間の隙間の数 */
   }
 }
 
@@ -57,7 +57,7 @@
   }
 }
 
-.carousel__item:nth-child(2n) {
+/* .carousel__item:nth-child(2n) {
   margin-top: 60px;
 }
 
@@ -65,7 +65,7 @@
   .carousel__item:nth-child(2n) {
     margin-top: 30px;
   }
-}
+} */
 
 @keyframes scroll {
   0% {
