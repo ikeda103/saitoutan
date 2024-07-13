@@ -3,6 +3,12 @@
   margin: 150px 0 100px;
 }
 
+@media screen and (max-width: 768px) {
+  .carousel {
+    margin: 100px 0;
+  }
+}
+
 .carousel__list {
   display: flex;
   gap: 30px;
@@ -52,7 +58,7 @@
 }
 
 .carousel__item:nth-child(2n) {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 @media screen and (max-width: 768px) {

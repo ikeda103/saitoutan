@@ -30,7 +30,7 @@
 @media screen and (max-width: 768px) {
   .key-visual__title {
     left: 10%;
-    top: 50%;
+    top: 45%;
   }
 }
 
@@ -60,6 +60,6 @@
     font-size: 28px;
     font-weight: bold;
     color: #fff;
-    line-height: 45px;
+    line-height: 50px;
   }
 }

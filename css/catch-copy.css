@@ -1,6 +1,6 @@
 .catch-copy {
   position: relative;
-  max-width: 1200px;
+  max-width: 1000px;
   padding: 0 16px;
   margin: 200px auto;
 }
@@ -51,34 +51,29 @@
 }
 
 .move-icon-right {
-  opacity: 0.4;
+  opacity: 0.7;
   z-index: -1;
   position: absolute;
-  right: 180px;
+  right: 60px;
   top: calc(50% - 50px);
   transform: translateY(-50%);
   animation: moveIcon 5s infinite;
 }
 
-@media screen and (max-width: 768px) {
-  .move-icon-right {
-    right: 20px;
-  }
-}
-
 .move-icon-left {
-  opacity: 0.4;
+  opacity: 0.7;
   z-index: -1;
   position: absolute;
-  left: 130px;
+  left: 20px;
   top: calc(50% + 100px);
   transform: translateY(-50%);
   animation: moveIcon 7s infinite;
 }
 
 @media screen and (max-width: 768px) {
+  .move-icon-right,
   .move-icon-left {
-    left: 20px;
+    opacity: 0.2;
   }
 }
 

@@ -91,6 +91,7 @@
   position: relative;
   letter-spacing: 1.2px;
   font-weight: bold;
+  transition: color 0.2s;
 }
 
 .header__menu a::before {
@@ -100,8 +101,12 @@
   left: 50%;
   width: 0;
   height: 1px;
-  background-color: #fff;
+  background-color: #ffcc00;
   transition: width 0.3s, left 0.3s;
+}
+
+.header__menu a:hover {
+  color: #ffcc00;
 }
 
 .header__menu a:hover::before {
