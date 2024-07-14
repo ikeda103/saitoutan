@@ -11,6 +11,12 @@
   padding: 100px 16px;
 }
 
+@media screen and (max-width: 768px) {
+  .sitemap__container {
+    padding: 70px 16px;
+  }
+}
+
 .sitemap__link {
   font-size: 20px;
   color: #fff;

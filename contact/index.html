@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/page-title.css" />
-    <link rel="stylesheet" href="../css/sitemap.css" />
+    <link rel="stylesheet" href="../css/contact-form.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +28,7 @@
       <nav class="header__nav">
         <ul class="header__menu">
           <li><a href="/saitoutan/products">商品紹介</a></li>
-          <li><a href="/saitoutan/shop">店舗紹介</a></li>
+          <li><a href="/saitoutan/store">店舗紹介</a></li>
           <li><a href="/saitoutan/contact">お問い合わせ</a></li>
         </ul>
       </nav>
@@ -74,6 +74,39 @@
         <!--Waves end-->
       </section>
       <!-- キービジュアル -->
+      <!-- お問い合わせフォーム -->
+      <section class="contact">
+        <form id="contactForm">
+          <div class="contact__container">
+            <div class="contact__input__container">
+              <label class="contact__input__title" for="name"
+                >氏名<span class="required">*</span></label
+              >
+              <input class="contact__input__text" type="text" id="name" name="name" required />
+            </div>
+            <div class="contact__input__container">
+              <label class="contact__input__title" for="email"
+                >メールアドレス<span class="required">*</span></label
+              >
+              <input class="contact__input__text" type="email" id="email" name="email" required />
+            </div>
+            <div class="contact__input__container">
+              <label class="contact__input__title" for="message"
+                >お問い合わせ内容<span class="required">*</span></label
+              >
+              <textarea
+                class="contact__input__textarea"
+                id="message"
+                name="message"
+                required
+              ></textarea>
+            </div>
+
+            <button class="contact__button" type="submit">送信</button>
+          </div>
+        </form>
+      </section>
+      <!-- お問い合わせフォーム -->
     </main>
     <!-- メインコンテンツ -->
 
