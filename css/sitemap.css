@@ -1,0 +1,47 @@
+.sitemap {
+  background-color: #069fdc;
+}
+
+.sitemap__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 100px 16px;
+}
+
+.sitemap__link {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .sitemap__link {
+    font-size: 16px;
+  }
+}
+
+.sitemap__link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #ffcc00;
+  transition: width 0.3s, left 0.3s;
+}
+
+.sitemap__link:hover {
+  color: #ffcc00;
+}
+
+.sitemap__link:hover::before {
+  width: 100%;
+  left: 0;
+}
