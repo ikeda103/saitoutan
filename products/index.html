@@ -2,19 +2,30 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="ja" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>板垣商店｜根室のおみせやさん｜納沙布岬</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+    <meta
+      name="description"
+      content="根室の板垣商店では、納沙布岬の特産品やお土産を提供しています。本土最東端ガラナや北の勝など、ここでしか手に入らない特別な品々をお楽しみください。"
     />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/page-title.css" />
+    <link rel="stylesheet" href="../css/sitemap.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <base href="/saitoutan/" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__logo">いたがき</h1>
+    <!-- ヘッダー -->
+    <header class="header visible">
       <nav class="header__nav">
         <ul class="header__menu">
           <li><a href="/products">商品紹介</a></li>
@@ -22,15 +33,66 @@
           <li><a href="/contact">お問い合わせ</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <div>aaa</div>
-    </main>
-
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 株式会社サンプル. All rights reserved.</p>
+      <div class="header__logo">
+        <img class="sp-hidden" src="../image/logo.png" alt="いたがき" width="440" height="440" />
+        <img class="pc-hidden" src="../image/sp-logo.png" alt="いたがき" width="409" height="178" />
       </div>
+    </header>
+    <!-- ヘッダー -->
+
+    <!-- メインコンテンツ -->
+    <main>
+      <!-- キービジュアル -->
+      <section class="page-title">
+        <div class="page-title__container">
+          <span class="page-title--en">PRODUCTS</span>
+          <h1 class="page-title--text">商品紹介</h1>
+        </div>
+        <!--Waves Container-->
+        <div class="waves-container__static">
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(6,159,220,0.7)" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(6,159,220,0.5)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(6,159,220,0.3)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#069FDC" />
+            </g>
+          </svg>
+        </div>
+        <!--Waves end-->
+      </section>
+      <!-- キービジュアル -->
+    </main>
+    <!-- メインコンテンツ -->
+
+    <!-- フッター -->
+    <footer>
+      <div class="footer__link">
+        <a href="/sitemap" class="footer__link__item">サイトマップ</a>
+        <a href="/contact" class="footer__link__item">お問い合わせ</a>
+      </div>
+      <a class="footer__tel" href="tel:0153-28-3045">
+        <img src="../image/call.svg" alt="電話" width="20" height="20" />
+        <span>0153-28-3045</span>
+      </a>
+      <small>&copy; 2024 板垣商店 All rights reserved.</small>
     </footer>
+    <!-- フッター -->
+
+    <script src="../js/animation.js" defer></script>
+    <script src="../js/header.js" defer></script>
   </body>
 </html>
