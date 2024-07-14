@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       header.classList.remove('hidden');
       header.classList.add('visible');
     } else {
-      window.location.href = '/';
+      window.location.href = '/saitoutan';
     }
   });
 });
