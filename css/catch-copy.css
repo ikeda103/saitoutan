@@ -83,12 +83,12 @@
 
 @keyframes moveIcon {
   0% {
-    transform: translateY(-60%);
+    transform: translateY(-80%);
   }
   50% {
     transform: translateY(-45%);
   }
   100% {
-    transform: translateY(-60%);
+    transform: translateY(-80%);
   }
 }
