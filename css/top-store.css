@@ -1,0 +1,42 @@
+.top-store {
+  position: relative;
+  max-width: 1000px;
+  padding: 0 16px;
+  margin: 200px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-store {
+    margin: 100px auto;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.top-store__image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .top-store__image {
+    aspect-ratio: 3/2;
+  }
+}
+
+.top-store__text {
+  font-size: 15px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .top-store__text {
+    font-size: 14px;
+  }
+}
