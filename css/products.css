@@ -80,6 +80,8 @@
   letter-spacing: 5px;
   line-height: 40px;
   font-size: 20px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .products.blue .products__catchphrase {
@@ -91,7 +93,7 @@
   .products__catchphrase {
     margin-top: 30px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 3px;
   }
 }
