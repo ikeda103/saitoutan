@@ -56,7 +56,9 @@
 .contact__button {
   padding: 10px 20px;
   width: 100px;
-  background-color: #ffcc00;
+  background-color: #e0b300;
+  color: #fff;
+  letter-spacing: 3px;
   border: none;
   font-size: 14px;
   border-radius: 5px;
