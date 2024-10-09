@@ -40,11 +40,13 @@
   opacity: 0;
   transition: transform 1s ease-out, opacity 1.5s ease-out;
   will-change: transform, opacity;
+  visibility: hidden;
 }
 
 .key-visual__text .line.show {
   transform: translateY(0);
   opacity: 1;
+  visibility: visible;
 }
 
 .key-visual__title {

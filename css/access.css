@@ -1,11 +1,15 @@
 .access {
   background-color: #069fdc;
-  padding: 50px 0 200px;
+  padding: 50px 0 100px;
+}
+
+.access.store {
+  background-color: #fff;
 }
 
 @media screen and (max-width: 768px) {
   .access {
-    padding: 50px 0 150px;
+    padding: 50px 0 70px;
   }
 }
 
@@ -15,6 +19,10 @@
   text-align: center;
   margin-bottom: 60px;
   font-size: 32px;
+}
+
+.access.store .access__title {
+  color: #121212;
 }
 
 @media screen and (max-width: 768px) {
@@ -29,7 +37,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -10px;
+  bottom: -12px;
   width: 50px;
   height: 3px;
   background-color: #ffcc00;
@@ -104,8 +112,14 @@
 
 .access__text {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.access.store .access__text {
+  color: #121212;
+  text-shadow: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -118,4 +132,8 @@
 .access__tel {
   text-decoration: underline;
   color: #fff;
+}
+
+.access.store .access__tel {
+  color: #121212;
 }
